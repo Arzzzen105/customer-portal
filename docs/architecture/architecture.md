@@ -8,11 +8,11 @@ are project decisions, not general framework advice. Skills
 
 ## AD-1 Build & module layout
 
-- Single Gradle module (`customer-portal`), Kotlin DSL. No multi-module split
+- Single Maven module (`customer-portal`), `pom.xml`. No multi-module split
   in this project.
 - Production code under `src/main/java/org/example/customerportal`.
 - Test code mirrors that package tree under `src/test/java`.
-- No new Gradle subprojects or source sets without an approved decision.
+- No new Maven submodules or source directories without an approved decision.
 
 ## AD-2 Layered architecture
 

@@ -35,7 +35,7 @@ disagree, the canonical file above wins.
 
 - Java 21
 - Spring Boot 4.x — Spring Web MVC, Spring Data JPA, Spring Security
-- Gradle (Kotlin DSL)
+- Maven (pom.xml)
 - H2 (file-based locally; isolated in-memory for tests — see
   `docs/architecture/persistence-conventions.md`)
 - JUnit 5, Spring Boot Test

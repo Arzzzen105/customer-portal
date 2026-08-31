@@ -1,0 +1,23 @@
+{
+  "prompt-guard": {
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "python .agents/hooks/block-backslash-prompt.py"
+      }
+    ]
+  },
+  "tool-logger": {
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .agents/hooks/log-tool.py"
+          }
+        ]
+      }
+    ]
+  }
+}
