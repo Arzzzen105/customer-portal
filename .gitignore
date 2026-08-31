@@ -41,3 +41,7 @@ out/
 ### Antigravity cleanup ###
 .claude/
 .gemini/
+.github_token
+.env
+.env.*
+mcp_config.json
