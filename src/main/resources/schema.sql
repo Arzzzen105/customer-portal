@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS customer (
+    id BIGINT AUTO_INCREMENT,
+    email VARCHAR(255) NOT NULL,
+    password_hash VARCHAR(60) NOT NULL,
+    role VARCHAR(20) NOT NULL DEFAULT 'CUSTOMER',
+    enabled BOOLEAN NOT NULL DEFAULT TRUE,
+    created_at TIMESTAMP WITH TIME ZONE NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE NOT NULL,
+    CONSTRAINT pk_customer PRIMARY KEY (id),
+    CONSTRAINT uq_customer_email UNIQUE (email)
+);

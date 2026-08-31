@@ -4,18 +4,24 @@
 version: 1
 story: US-001
 workflow: story-delivery
-current_stage: CLARIFICATION
-previous_stage: BACKLOG_SYNC
-last_completed_stage: BACKLOG_SYNC
-status: IN_PROGRESS
+current_stage: ARCHIVED
+previous_stage: COMPLETED
+last_completed_stage: COMPLETED
+status: ARCHIVED
 attempt: 1
-last_invoked_skill: null
-last_result: null
-last_artifacts: []
+last_invoked_skill: story-orchestrator
+last_result:
+  verdict: PASS
+  stage: ARCHIVED
+  recorded_at: 2026-08-31T16:30:10Z
+last_artifacts:
+  - type: delivery_summary
+    path: docs/evidence/US-001-delivery-summary.md
+    version: 1
 pending_human_gate: null
 blocking_issues: []
 non_blocking_findings: []
 started_at: 2026-08-30T23:50:01Z
-updated_at: 2026-08-30T23:50:01Z
-completed_at: null
-archived_at: null
+updated_at: 2026-08-31T16:30:10Z
+completed_at: 2026-08-31T16:28:40Z
+archived_at: 2026-08-31T16:30:10Z
