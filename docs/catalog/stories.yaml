@@ -43,7 +43,7 @@ stories:
     path: docs/stories/US-003-customer-profile-view.md
     epic: EPIC-1
     title: View Customer Profile
-    state: BACKLOG
+    state: ARCHIVED
     source:
       type: local_only
       repository: null
