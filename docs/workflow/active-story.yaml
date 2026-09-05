@@ -5,7 +5,7 @@ version: 1
 active_story: null
 story_path: null
 source:
-  type: null
+  type: local_only
   repository: null
   issue_number: null
   issue_url: null
