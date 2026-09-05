@@ -6,6 +6,9 @@ import org.example.customerportal.model.dto.CustomerResponse;
 import org.example.customerportal.model.request.RegisterCustomerRequest;
 import org.example.customerportal.service.CustomerService;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,5 +31,14 @@ public class CustomerController {
         URI location = URI.create("/api/v1/customers/" + response.getId());
 
         return ResponseEntity.created(location).body(response);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<CustomerResponse> getCustomerProfile(
+            @PathVariable("id") Long id,
+            Authentication authentication) {
+
+        CustomerResponse response = customerService.getCustomerProfile(id, authentication);
+        return ResponseEntity.ok(response);
     }
 }

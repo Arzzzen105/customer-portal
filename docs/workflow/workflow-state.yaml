@@ -4,24 +4,24 @@
 version: 1
 story: US-003
 workflow: story-delivery
-current_stage: IMPLEMENTATION_PLANNING
-previous_stage: IMPACT_ANALYSIS
-last_completed_stage: IMPACT_ANALYSIS
+current_stage: RECONCILIATION
+previous_stage: SECURITY_REVIEW
+last_completed_stage: SECURITY_REVIEW
 status: IN_PROGRESS
 attempt: 1
-last_invoked_skill: impact-analyzer
+last_invoked_skill: security-reviewer
 last_result:
   verdict: PASS
-  stage: IMPACT_ANALYSIS
-  recorded_at: 2026-09-05T10:11:30Z
+  stage: SECURITY_REVIEW
+  recorded_at: 2026-09-05T10:34:30Z
 last_artifacts:
-  - type: impact_analysis
-    path: docs/impact-analysis/US-003-impact-analysis.md
+  - type: security_review
+    path: docs/reviews/security/US-003-security-review.md
     version: 1
 pending_human_gate: null
 blocking_issues: []
 non_blocking_findings: []
 started_at: 2026-09-05T09:58:00Z
-updated_at: 2026-09-05T10:11:30Z
+updated_at: 2026-09-05T10:34:30Z
 completed_at: null
 archived_at: null
