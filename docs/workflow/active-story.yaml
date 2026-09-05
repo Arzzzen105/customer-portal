@@ -2,8 +2,8 @@
 # Schema: docs/workflow/state-schema.md
 # Writer: backlog-sync (directly, or delegated by story-orchestrator on activation).
 version: 1
-active_story: US-003
-story_path: docs/stories/US-003-customer-profile-view.md
+active_story: null
+story_path: null
 source:
   type: local_only
   repository: null
@@ -11,4 +11,4 @@ source:
   issue_url: null
 activated_at: 2026-09-05T09:56:51Z
 activated_by: story-orchestrator
-status: COMPLETED
+status: ARCHIVED

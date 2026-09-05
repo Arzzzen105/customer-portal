@@ -4,24 +4,24 @@
 version: 1
 story: US-003
 workflow: story-delivery
-current_stage: COMPLETED
-previous_stage: READY_FOR_PR
-last_completed_stage: READY_FOR_PR
-status: COMPLETED
+current_stage: ARCHIVED
+previous_stage: COMPLETED
+last_completed_stage: COMPLETED
+status: ARCHIVED
 attempt: 1
-last_invoked_skill: null
+last_invoked_skill: story-orchestrator
 last_result:
-  verdict: HUMAN_APPROVED
-  stage: READY_FOR_PR
-  recorded_at: 2026-09-05T10:45:15Z
+  verdict: ARCHIVED
+  stage: COMPLETED
+  recorded_at: 2026-09-05T10:48:00Z
 last_artifacts:
-  - type: pr_summary
-    path: docs/pr/US-003-pr-summary.md
+  - type: delivery_summary
+    path: docs/evidence/US-003-delivery-summary.md
     version: 1
 pending_human_gate: null
 blocking_issues: []
 non_blocking_findings: []
 started_at: 2026-09-05T09:58:00Z
-updated_at: 2026-09-05T10:45:15Z
+updated_at: 2026-09-05T10:48:00Z
 completed_at: 2026-09-05T10:45:15Z
-archived_at: null
+archived_at: 2026-09-05T10:48:00Z
