@@ -4,24 +4,24 @@
 version: 1
 story: US-003
 workflow: story-delivery
-current_stage: RECONCILIATION
-previous_stage: SECURITY_REVIEW
-last_completed_stage: SECURITY_REVIEW
-status: IN_PROGRESS
+current_stage: COMPLETED
+previous_stage: READY_FOR_PR
+last_completed_stage: READY_FOR_PR
+status: COMPLETED
 attempt: 1
-last_invoked_skill: security-reviewer
+last_invoked_skill: null
 last_result:
-  verdict: PASS
-  stage: SECURITY_REVIEW
-  recorded_at: 2026-09-05T10:34:30Z
+  verdict: HUMAN_APPROVED
+  stage: READY_FOR_PR
+  recorded_at: 2026-09-05T10:45:15Z
 last_artifacts:
-  - type: security_review
-    path: docs/reviews/security/US-003-security-review.md
+  - type: pr_summary
+    path: docs/pr/US-003-pr-summary.md
     version: 1
 pending_human_gate: null
 blocking_issues: []
 non_blocking_findings: []
 started_at: 2026-09-05T09:58:00Z
-updated_at: 2026-09-05T10:34:30Z
-completed_at: null
+updated_at: 2026-09-05T10:45:15Z
+completed_at: 2026-09-05T10:45:15Z
 archived_at: null
