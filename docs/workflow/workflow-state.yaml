@@ -2,26 +2,29 @@
 # Schema: docs/workflow/state-schema.md
 # Writer: story-orchestrator ONLY. Stage Skills never write this file.
 version: 1
-story: null
+story: US-003
 workflow: story-delivery
-current_stage: ARCHIVED
-previous_stage: COMPLETED
-last_completed_stage: COMPLETED
-status: ARCHIVED
+current_stage: API_DESIGN
+previous_stage: HUMAN_SPEC_APPROVAL
+last_completed_stage: HUMAN_SPEC_APPROVAL
+status: IN_PROGRESS
 attempt: 1
-last_invoked_skill: story-orchestrator
+last_invoked_skill: null
 last_result:
-  verdict: ARCHIVED
-  stage: ARCHIVED
-  recorded_at: 2026-09-02T18:10:20Z
+  verdict: HUMAN_APPROVED
+  stage: HUMAN_SPEC_APPROVAL
+  recorded_at: 2026-09-05T10:04:30Z
 last_artifacts:
-  - type: delivery_summary
-    path: docs/evidence/US-002-delivery-summary.md
+  - type: specification
+    path: docs/specifications/US-003-spec.md
+    version: 1
+  - type: specification_review
+    path: docs/reviews/specifications/US-003-spec-review.md
     version: 1
 pending_human_gate: null
 blocking_issues: []
 non_blocking_findings: []
-started_at: 2026-09-02T13:12:23Z
-updated_at: 2026-09-02T18:10:20Z
-completed_at: 2026-09-02T18:09:21Z
-archived_at: 2026-09-02T18:10:20Z
+started_at: 2026-09-05T09:58:00Z
+updated_at: 2026-09-05T10:04:30Z
+completed_at: null
+archived_at: null
